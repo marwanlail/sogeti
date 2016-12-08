@@ -1,3 +1,40 @@
 page-home {
+  #loginButtonsContainer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
 
+  #loginPage {
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+  }
+
+  #loginLogo {
+    max-width: 250px;
+    margin: 5rem auto;
+    display: block;
+  }
+
+  .loginButtons {
+    margin: 0;
+    color: #4d4d4d;
+    font-weight: 500;
+    background-color: #fff017;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    text-transform: uppercase;
+  }
+
+  .loginButtons.activated {
+    color: #ffffff;;
+    background-color: #D41142 !important;
+  }
+
+  .loginButtons.loginSocial {
+    color: #ffffff;
+    background-color: #4d4d4d;
+  }
 }
