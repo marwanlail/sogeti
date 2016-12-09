@@ -1,3 +1,71 @@
-<ion-content>
-  <h2>Login Page</h2>
+<ion-header>
+  <ion-toolbar id="formHeaderContainer">
+    <ion-row>
+      <ion-col width-25>
+        <ion-col>
+          <ion-icon (click)="closeSignInModal()" class="buceesBackArrowIcon" ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+        </ion-col>
+      </ion-col>
+      <ion-col width-50>
+        <ion-title>Your Account</ion-title>
+      </ion-col>
+      <ion-col width-25>
+        <ion-col offset-75>
+          <ion-icon class="buceesSearchIcon" ios="ios-search" md="md-search"></ion-icon>
+        </ion-col>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+<ion-content id="loginPage">
+  <ion-row id="formContainer">
+    <ion-card>
+      <ion-card-content>
+        <ion-row>
+          <ion-col>
+            <ion-icon class="profileAddImg" ios="ios-add" md="md-add"></ion-icon>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col id="formInputContainer">
+            <ion-list>
+              <ion-item>
+                <ion-label color="primary">Name</ion-label>
+                <ion-input placeholder="Text Input"></ion-input>
+              </ion-item>
+            </ion-list>
+            <ion-list>
+              <ion-item>
+                <ion-label color="primary">Location</ion-label>
+                <ion-input placeholder="Text Input"></ion-input>
+              </ion-item>
+            </ion-list>
+            <ion-list>
+              <ion-item>
+                <ion-label color="primary">Email</ion-label>
+                <ion-input placeholder="Text Input"></ion-input>
+              </ion-item>
+            </ion-list>
+            <ion-list>
+              <ion-item>
+                <ion-label color="primary">Password</ion-label>
+                <ion-input placeholder="Text Input"></ion-input>
+              </ion-item>
+            </ion-list>
+            <ion-list>
+              <ion-item>
+                <ion-label color="primary">Confirm</ion-label>
+                <ion-input placeholder="Text Input"></ion-input>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+  </ion-row>
 </ion-content>
+<ion-footer>
+  <ion-toolbar id="formSignUpButtonContainer">
+    <button ion-button block class="buceesYellowButton">Sign Up</button>
+  </ion-toolbar>
+</ion-footer>

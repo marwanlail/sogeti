@@ -1,0 +1,27 @@
+#loginPage {
+  background-color: #eeeeee;
+}
+
+#formContainer {
+  height: 100%;
+}
+
+#formSignUpButtonContainer {
+  width: 100%;
+  padding: 0;
+}
+
+#formHeaderContainer .toolbar-background-ios {
+  background: #282828;
+}
+
+#formHeaderContainer ion-title .toolbar-title-ios {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+#formInputContainer ion-list ion-item:first-of-type {
+  border-top: none;
+  margin: 1em 0;
+}

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {ViewController} from 'ionic-angular';
+
 
 @Component ({
   templateUrl: 'login.html'
@@ -6,7 +8,11 @@ import { Component } from '@angular/core';
 
 export class LoginPage {
 
-  constructor () {
+  constructor (public viewCtrl: ViewController) {
 
+  }
+
+  closeSignInModal () {
+    this.viewCtrl.dismiss();
   }
 }

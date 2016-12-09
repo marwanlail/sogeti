@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import { ModalController, ViewController } from 'ionic-angular';
-import { LoginPage } from  '../login/login'
+import {Component} from '@angular/core';
+import {NavController} from 'ionic-angular';
+import {ModalController, ViewController} from 'ionic-angular';
+import {LoginPage} from  '../login/login'
 
 @Component({
   selector: 'page-home',
@@ -17,9 +17,16 @@ export class HomePage {
 
   }
 
-  showLoginForm() {
-    console.log('Show Login Form Clicked..');
-    let loginModal = this.modalCtrl.create(LoginPage);
+  options = {
+    showSignUp: false,
+    showSignIn: false,
+    showSocialLogIn: false
+  };
+
+  showLoginForm(key) {
+    this.options[key] = !(this.options[key]);
+    console.log(this.options);
+    let loginModal = this.modalCtrl.create(LoginPage, this.options);
     loginModal.present();
   }
 

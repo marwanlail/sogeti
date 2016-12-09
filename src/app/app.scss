@@ -24,3 +24,46 @@ html {
 .buceesRed {
   background-color: #D41142;
 }
+
+.buceesYellowButton {
+  margin: 0;
+  color: #4d4d4d;
+  font-weight: 500;
+  background-color: #fff017;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  text-transform: uppercase;
+}
+
+.buceesYellowButton.activated {
+  color: #ffffff;;
+  background-color: #D41142 !important;
+}
+
+.buceesBackArrowIcon {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.buceesSearchIcon {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.profileAddImg {
+  position: relative;
+  left: 50%;
+  margin: 4rem 0;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-size: 5rem;
+  background: rgba(0,0,0,0.03);
+  padding: 0 25px;
+  border-radius: 50%;
+  font-weight: bolder;
+  color: rgba(0,0,0,0.6);
+}
