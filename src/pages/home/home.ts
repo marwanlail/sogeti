@@ -2,6 +2,8 @@ import {Component} from '@angular/core';
 import {NavController} from 'ionic-angular';
 import {ModalController, ViewController} from 'ionic-angular';
 import {LoginPage} from  '../login/login'
+import {SignupPage} from  '../signup/signup'
+import {SocialLoginPage} from  '../sociallogin/sociallogin'
 
 @Component({
   selector: 'page-home',
@@ -24,10 +26,25 @@ export class HomePage {
   };
 
   showLoginForm(key) {
-    this.options[key] = !(this.options[key]);
-    console.log(this.options);
-    let loginModal = this.modalCtrl.create(LoginPage, this.options);
-    loginModal.present();
+    if (key == 'showSignIn'){
+      this.options[key] = !(this.options[key]);
+      console.log(this.options);
+      let loginModal = this.modalCtrl.create(LoginPage, this.options);
+      loginModal.present();
+    }
+    else if (key == 'showSignUp'){
+      this.options[key] = !(this.options[key]);
+      console.log(this.options);
+      let loginModal = this.modalCtrl.create(SignupPage, this.options);
+      loginModal.present();
+    }
+    else if (key == 'showSocialLogIn'){
+      this.options[key] = !(this.options[key]);
+      console.log(this.options);
+      let loginModal = this.modalCtrl.create(SocialLoginPage, this.options);
+      loginModal.present();
+    }
+
   }
 
 }

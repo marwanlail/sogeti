@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {ViewController} from 'ionic-angular';
+import {ModalController, ViewController} from 'ionic-angular';
+import {SocialLoginPage} from  '../sociallogin/sociallogin'
 
 
 @Component ({
@@ -8,11 +9,18 @@ import {ViewController} from 'ionic-angular';
 
 export class LoginPage {
 
-  constructor (public viewCtrl: ViewController) {
+  constructor (public viewCtrl: ViewController, public modalCtrl: ModalController) {
 
   }
 
   closeSignInModal () {
     this.viewCtrl.dismiss();
+  }
+
+  showLoginForm(key) {
+    if (key == 'showSocialLogIn'){      
+      let loginModal = this.modalCtrl.create(SocialLoginPage);
+      loginModal.present();
+    }
   }
 }

@@ -7,65 +7,42 @@
         </ion-col>
       </ion-col>
       <ion-col width-50>
-        <ion-title>Your Account</ion-title>
-      </ion-col>
-      <ion-col width-25>
-        <ion-col offset-75>
-          <ion-icon class="buceesSearchIcon" ios="ios-search" md="md-search"></ion-icon>
-        </ion-col>
-      </ion-col>
+        <ion-title>SIGN IN</ion-title>
+      </ion-col>      
     </ion-row>
   </ion-toolbar>
 </ion-header>
 <ion-content id="loginPage">
+  <img src="../../assets/Bucees-Login-Banner.png" />
   <ion-row id="formContainer">
     <ion-card>
       <ion-card-content>
         <ion-row>
-          <ion-col>
-            <ion-icon class="profileAddImg" ios="ios-add" md="md-add"></ion-icon>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col id="formInputContainer">
-            <ion-list>
-              <ion-item>
-                <ion-label color="primary">Name</ion-label>
-                <ion-input placeholder="Text Input"></ion-input>
-              </ion-item>
-            </ion-list>
-            <ion-list>
-              <ion-item>
-                <ion-label color="primary">Location</ion-label>
-                <ion-input placeholder="Text Input"></ion-input>
-              </ion-item>
-            </ion-list>
+          <ion-col id="formInputContainer">            
             <ion-list>
               <ion-item>
                 <ion-label color="primary">Email</ion-label>
-                <ion-input placeholder="Text Input"></ion-input>
+                <ion-input placeholder="abc@bucees.com"></ion-input>
               </ion-item>
             </ion-list>
             <ion-list>
               <ion-item>
                 <ion-label color="primary">Password</ion-label>
-                <ion-input placeholder="Text Input"></ion-input>
+                <ion-input placeholder="************"></ion-input>
               </ion-item>
-            </ion-list>
-            <ion-list>
-              <ion-item>
-                <ion-label color="primary">Confirm</ion-label>
-                <ion-input placeholder="Text Input"></ion-input>
-              </ion-item>
-            </ion-list>
+            </ion-list>            
           </ion-col>
         </ion-row>
-      </ion-card-content>
-    </ion-card>
+        <ion-row>
+    <ion-label (click)="showLoginForm('showSocialLogIn')" class="social" color="primary"> SIGN IN VIA SOCIAL ACCOUNT</ion-label>
   </ion-row>
+      </ion-card-content>      
+    </ion-card>    
+  </ion-row>
+  
 </ion-content>
 <ion-footer>
   <ion-toolbar id="formSignUpButtonContainer">
-    <button ion-button block class="buceesYellowButton">Sign Up</button>
+    <button ion-button block (click)="closeSignInModal()" class="buceesYellowButton">Sign In</button>
   </ion-toolbar>
 </ion-footer>
